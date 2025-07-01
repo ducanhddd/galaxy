@@ -24,7 +24,7 @@ controls.enabled = false;
 controls.target.set(0, 0, 0);
 controls.enablePan = false;
 controls.minDistance = 15;
-controls.maxDistance = 300;
+controls.maxDistance = 270;
 controls.zoomSpeed = 0.1;
 controls.rotateSpeed = 0.3;
 controls.update();
@@ -100,9 +100,9 @@ const numGroups = heartImages.length;
 // --- LOGIC DÙNG NỘI SUY ---
 
 // Mật độ điểm khi chỉ có 1 ảnh (cao nhất)
-const maxDensity = 25000;
+const maxDensity = 50000;
 // Mật độ điểm khi có 10 ảnh trở lên (thấp nhất)
-const minDensity = 1000;
+const minDensity = 2000;
 // Số lượng ảnh tối đa mà chúng ta quan tâm để điều chỉnh
 const maxGroupsForScale = 14;
 
