@@ -636,7 +636,7 @@ function createTextRings() {
       const charCode = char.charCodeAt(0);
       if ((charCode >= 0x4E00 && charCode <= 0x9FFF) || // CJK
         (charCode >= 0x3040 && charCode <= 0x309F) || // Hiragana
-        (charCode >= 0x30A0 && charCode <= 0x30FF) || /9 * textureHeight);
+        (charCode >= 0x30A0 && charCode <= 0x30FF) || (9 * textureHeight);
 
     // Đo chiều rộng của text để lặp lại
     const tempCanvas = document.createElement('canvas');
