@@ -25,7 +25,7 @@ controls.target.set(0, 0, 0);
 controls.enablePan = false;
 controls.minDistance = 15;
 controls.maxDistance = 300;
-controls.zoomSpeed = 0.5;
+controls.zoomSpeed = 0.1;
 controls.rotateSpeed = 0.3;
 controls.update();
 
