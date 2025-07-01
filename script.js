@@ -25,8 +25,8 @@ controls.target.set(0, 0, 0);
 controls.enablePan = false;
 controls.minDistance = 15;
 controls.maxDistance = 270;
-controls.zoomSpeed = 0.1;
-controls.rotateSpeed = 0.3;
+controls.zoomSpeed = 0.3;
+controls.rotateSpeed = 0.5;
 controls.update();
 
 // ---- HÀM TIỆN ÍCH TẠO HIỆU ỨNG GLOW ----
