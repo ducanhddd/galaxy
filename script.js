@@ -670,8 +670,8 @@ function createTextRings() {
     // ---- Kết thúc logic phân tích font ----
 
     // ---- Tạo texture chữ động ----
-    const textureHeight = 150;
-    const fontSize = Math.max(130, 0.8 * textureHeight);
+    const textureHeight = 50;
+    const fontSize = Math.max(180, 0.9 * textureHeight);
 
     // Đo chiều rộng của text để lặp lại
     const tempCanvas = document.createElement('canvas');
