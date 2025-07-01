@@ -94,7 +94,7 @@ const heartImages = defaultHeartImages;
 const numGroups = heartImages.length;
 
 // ==== GIẢM MẬT ĐỘ ẢNH (cho ảnh thưa ra) ====
-const maxDensity = 8000;   // hoặc thấp hơn nữa nếu muốn cực thưa
+const maxDensity = 800;   // hoặc thấp hơn nữa nếu muốn cực thưa
 const minDensity = 300;
 const maxGroupsForScale = 14;
 
@@ -240,7 +240,7 @@ for (let group = 0; group < numGroups; group++) {
 
     // Material khi ở xa
     const materialFar = new THREE.PointsMaterial({
-      size: 7.0,
+      size: 5.0,
       map: neonTexture,
       transparent: true,
       alphaTest: 0.2,
