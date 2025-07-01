@@ -636,42 +636,7 @@ function createTextRings() {
       const charCode = char.charCodeAt(0);
       if ((charCode >= 0x4E00 && charCode <= 0x9FFF) || // CJK
         (charCode >= 0x3040 && charCode <= 0x309F) || // Hiragana
-        (charCode >= 0x30A0 && charCode <= 0x30FF) || // Katakana
-        (charCode >= 0xAC00 && charCode <= 0xD7AF)) { // Korean
-        return 'cjk';
-      } else if (charCode >= 0 && charCode <= 0x7F) { // Latin
-        return 'latin';
-      }
-      return 'other';
-    }
-
-    let charCounts = { cjk: 0, latin: 0, other: 0 };
-    for (let char of text) {
-      charCounts[getCharType(char)]++;
-    }
-
-    const totalChars = text.length;
-    const cjkRatio = charCounts.cjk / totalChars;
-
-    let scaleParams = { fontScale: 0.75, spacingScale: 1.1 };
-
-    if (i === 0) {
-      scaleParams.fontScale = 0.55;
-      scaleParams.spacingScale = 0.9;
-    } else if (i === 1) {
-      scaleParams.fontScale = 0.65;
-      scaleParams.spacingScale = 1.0;
-    }
-
-    if (cjkRatio > 0) {
-      scaleParams.fontScale *= 0.9;
-      scaleParams.spacingScale *= 1.1;
-    }
-    // ---- Kết thúc logic phân tích font ----
-
-    // ---- Tạo texture chữ động ----
-    const textureHeight = 150;
-    const fontSize = Math.max(130, 0.8 * textureHeight);
+        (charCode >= 0x30A0 && charCode <= 0x30FF) || /9 * textureHeight);
 
     // Đo chiều rộng của text để lặp lại
     const tempCanvas = document.createElement('canvas');
