@@ -7,7 +7,7 @@ const scene = new THREE.Scene();
 scene.fog = new THREE.FogExp2(0x000000, 0.0015);
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
-camera.position.set(0, 20, );
+camera.position.set(0, 15, 25);
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -710,8 +710,8 @@ function createTextRings() {
 
     // Hiệu ứng glow cho viền chữ
     ctx.shadowColor = '#e0b3ff';
-    ctx.shadowBlur = 15;
-    ctx.lineWidth = 5;
+    ctx.shadowBlur = 18;
+    ctx.lineWidth = 7;
     ctx.strokeStyle = '#fff';
     ctx.strokeText(fullText, 0, textureHeight * 0.82); // căn dòng thấp hơn
 
@@ -1116,7 +1116,7 @@ function createHintText() {
   const canvas = document.createElement('canvas');
   canvas.width = canvas.height = canvasSize;
   const context = canvas.getContext('2d');
-  const fontSize = 100;
+  const fontSize = 50;
   const text = 'Chạm Vào Tinh Cầu';
   context.font = `bold ${fontSize}px Arial, sans-serif`;
   context.textAlign = 'center';
@@ -1166,7 +1166,7 @@ function startCameraAnimation() {
   const startPos = { x: camera.position.x, y: camera.position.y, z: camera.position.z };
   const midPos1 = { x: startPos.x, y: 0, z: startPos.z };
   const midPos2 = { x: startPos.x, y: 0, z: 160 };
-  const endPos = { x: -40, y: 100, z: 70 };
+  const endPos = { x: -40, y: 100, z: 100 };
 
   const duration1 = 0.2;
   const duration2 = 0.55;
