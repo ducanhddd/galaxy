@@ -100,9 +100,9 @@ const numGroups = heartImages.length;
 // --- LOGIC DÙNG NỘI SUY ---
 
 // Mật độ điểm khi chỉ có 1 ảnh (cao nhất)
-const maxDensity = 15000;
+const maxDensity = 8000;
 // Mật độ điểm khi có 10 ảnh trở lên (thấp nhất)
-const minDensity = 500;
+const minDensity = 300;
 // Số lượng ảnh tối đa mà chúng ta quan tâm để điều chỉnh
 const maxGroupsForScale = 14;
 
