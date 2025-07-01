@@ -331,7 +331,7 @@ for (let group = 0; group < numGroups; group++) {
 
     // Material khi ở gần
     const materialNear = new THREE.PointsMaterial({
-      size: 8.0,
+      size: 5.0,
       map: neonTexture,
       transparent: false,
       alphaTest: 0.2,
@@ -343,7 +343,7 @@ for (let group = 0; group < numGroups; group++) {
 
     // Material khi ở xa
     const materialFar = new THREE.PointsMaterial({
-      size: 8.0,
+      size: 5.0,
       map: neonTexture,
       transparent: true,
       alphaTest: 0.2,
