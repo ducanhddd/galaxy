@@ -7,7 +7,7 @@ const scene = new THREE.Scene();
 scene.fog = new THREE.FogExp2(0x000000, 0.0015);
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
-camera.position.set(0, 15, 25);
+camera.position.set(0, 20, );
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -1166,7 +1166,7 @@ function startCameraAnimation() {
   const startPos = { x: camera.position.x, y: camera.position.y, z: camera.position.z };
   const midPos1 = { x: startPos.x, y: 0, z: startPos.z };
   const midPos2 = { x: startPos.x, y: 0, z: 160 };
-  const endPos = { x: -40, y: 100, z: 100 };
+  const endPos = { x: -40, y: 100, z: 70 };
 
   const duration1 = 0.2;
   const duration2 = 0.55;
