@@ -94,7 +94,7 @@ const heartImages = defaultHeartImages;
 const numGroups = heartImages.length;
 
 // ==== GIẢM MẬT ĐỘ ẢNH (cho ảnh thưa ra) ====
-const maxDensity = 800;   // hoặc thấp hơn nữa nếu muốn cực thưa
+const maxDensity = 8000;   // hoặc thấp hơn nữa nếu muốn cực thưa
 const minDensity = 300;
 const maxGroupsForScale = 14;
 
