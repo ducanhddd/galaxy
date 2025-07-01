@@ -346,7 +346,7 @@ for (let group = 0; group < numGroups; group++) {
       size: 6.0,
       map: neonTexture,
       transparent: true,
-      alphaTest: 0.2,
+      alphaTest: 0.1,
       depthWrite: false,
       blending: THREE.AdditiveBlending,
       vertexColors: true
@@ -405,7 +405,7 @@ function createShootingStar() {
   const headMaterial = new THREE.MeshBasicMaterial({
     color: 0xffffff,
     transparent: true,
-    opacity: 0,
+    opacity: 0.1,
     blending: THREE.AdditiveBlending
   });
   const head = new THREE.Mesh(headGeometry, headMaterial);
