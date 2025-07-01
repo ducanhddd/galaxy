@@ -710,8 +710,8 @@ function createTextRings() {
 
     // Hiệu ứng glow cho viền chữ
     ctx.shadowColor = '#e0b3ff';
-    ctx.shadowBlur = 18;
-    ctx.lineWidth = 7;
+    ctx.shadowBlur = 15;
+    ctx.lineWidth = 5;
     ctx.strokeStyle = '#fff';
     ctx.strokeText(fullText, 0, textureHeight * 0.82); // căn dòng thấp hơn
 
