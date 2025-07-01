@@ -7,7 +7,7 @@ const scene = new THREE.Scene();
 scene.fog = new THREE.FogExp2(0x000000, 0.0015);
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
-camera.position.set(0, 20, 30);
+camera.position.set(0, 15, 25);
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -1116,7 +1116,7 @@ function createHintText() {
   const canvas = document.createElement('canvas');
   canvas.width = canvas.height = canvasSize;
   const context = canvas.getContext('2d');
-  const fontSize = 50;
+  const fontSize = 100;
   const text = 'Chạm Vào Tinh Cầu';
   context.font = `bold ${fontSize}px Arial, sans-serif`;
   context.textAlign = 'center';
