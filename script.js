@@ -7,7 +7,7 @@ const scene = new THREE.Scene();
 scene.fog = new THREE.FogExp2(0x000000, 0.0015);
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
-camera.position.set(0, 15, 25);
+camera.position.set(0, 20, 30);
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -19,7 +19,7 @@ document.getElementById('container').appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.autoRotate = true;
-controls.autoRotateSpeed = 0.2;
+controls.autoRotateSpeed = 0.5;
 controls.enabled = false;
 controls.target.set(0, 0, 0);
 controls.enablePan = false;
@@ -100,9 +100,9 @@ const numGroups = heartImages.length;
 // --- LOGIC DÙNG NỘI SUY ---
 
 // Mật độ điểm khi chỉ có 1 ảnh (cao nhất)
-const maxDensity = 8000;
+const maxDensity = 50000;
 // Mật độ điểm khi có 10 ảnh trở lên (thấp nhất)
-const minDensity = 300;
+const minDensity = 2000;
 // Số lượng ảnh tối đa mà chúng ta quan tâm để điều chỉnh
 const maxGroupsForScale = 14;
 
@@ -331,7 +331,7 @@ for (let group = 0; group < numGroups; group++) {
 
     // Material khi ở gần
     const materialNear = new THREE.PointsMaterial({
-      size: 8.0,
+      size: 4.0,
       map: neonTexture,
       transparent: false,
       alphaTest: 0.2,
@@ -343,7 +343,7 @@ for (let group = 0; group < numGroups; group++) {
 
     // Material khi ở xa
     const materialFar = new THREE.PointsMaterial({
-      size: 8.0,
+      size: 4.0,
       map: neonTexture,
       transparent: true,
       alphaTest: 0.2,
