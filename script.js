@@ -19,13 +19,13 @@ document.getElementById('container').appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.autoRotate = true;
-controls.autoRotateSpeed = 0.2;
+controls.autoRotateSpeed = 0.;
 controls.enabled = false;
 controls.target.set(0, 0, 0);
 controls.enablePan = false;
 controls.minDistance = 15;
 controls.maxDistance = 300;
-controls.zoomSpeed = 0.3;
+controls.zoomSpeed = 0.1;
 controls.rotateSpeed = 0.3;
 controls.update();
 
