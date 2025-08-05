@@ -614,10 +614,10 @@ scene.add(planet);
 
 // ---- TẠO CÁC VÒNG CHỮ QUAY QUANH HÀNH TINH ----
 const ringTexts = [
-  'Việt Nam',
-  "Cao Chung Đạt",
-  "Nguyễn Ngọc Yến Nhi",
-  "20/03/2005",
+  'happy birthday',
+  "Sinh nhật vui vẻ",
+  "Nguyễn chữa biết",
+  "20/03/20052005",
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
 
