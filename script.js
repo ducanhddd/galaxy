@@ -822,7 +822,7 @@ let galaxyAudio = null;
 
 function preloadGalaxyAudio() {
   const audioSources = [
-   "music/song1.mp3"
+   "music/song2.mp3"
   ];
 
   const randomIndex = Math.floor(Math.random() * audioSources.length);
